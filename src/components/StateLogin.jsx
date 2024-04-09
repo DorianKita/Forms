@@ -23,6 +23,11 @@ export default function Login() {
       ...prevState,
       [identifier]: value,
     }));
+
+    setDidEdit((prevState) => ({
+      ...prevState,
+      [identifier]: false,
+    }));
   }
 
   function handleSubmit(e) {
